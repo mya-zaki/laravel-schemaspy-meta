@@ -24,3 +24,5 @@ jobs:
             - ./vendor
 
       - run: docker-compose run php-ast composer test
+
+      - run: docker-compose run php-ast composer check-style

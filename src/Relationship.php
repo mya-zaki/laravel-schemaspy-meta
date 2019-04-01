@@ -17,5 +17,4 @@ class Relationship
         $this->parent_table = $parent_table;
         $this->local_key = $local_key;
     }
-    
 }

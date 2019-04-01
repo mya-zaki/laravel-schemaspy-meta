@@ -81,7 +81,7 @@ class GenerateSchemaMetaCommand extends Command
                 continue;
             }
 
-            if (in_array($class, $exclude_classes)){
+            if (in_array($class, $exclude_classes)) {
                 continue;
             }
 
@@ -104,8 +104,7 @@ class GenerateSchemaMetaCommand extends Command
 
     protected function isModelClass(\ReflectionClass $ref)
     {
-        $parent = function ($ref) use (&$parent)
-        {
+        $parent = function ($ref) use (&$parent) {
             $ref = $ref->getParentClass();
 
             if ($ref === false) {
