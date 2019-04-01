@@ -1,0 +1,7 @@
+version: "3"
+services:
+  php-ast:
+    build: ./
+    volumes:
+      - .:/var/www/html
+    command: bash -c "composer test"

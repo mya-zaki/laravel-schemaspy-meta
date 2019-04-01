@@ -1,0 +1,51 @@
+{
+  "name": "mya-zaki/laravel-schemaspy-meta",
+  "description": "Generates xml to modify input that will affect output from SchemaSpy.",
+  "keywords": [
+    "laravel",
+    "schemaspy",
+    "database",
+    "schema",
+    "er diagram"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "mya-zaki"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "illuminate/console": "^5.5,<5.9",
+    "illuminate/database": "^5.5,<5.9",
+    "composer/composer": "^1.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MyaZaki\\LaravelSchemaspyMeta\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "src/php-ast/util.php"
+    ],
+    "psr-4": {
+      "MyaZaki\\LaravelSchemaspyMeta\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "check-style": "phpcs -p --standard=PSR2 src/",
+    "fix-style": "phpcbf -p --standard=PSR2 src/"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MyaZaki\\LaravelSchemaspyMeta\\SchemaspyMetaServiceProvider"
+      ]
+    }
+  }
+}
