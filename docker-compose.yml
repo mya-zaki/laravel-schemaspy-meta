@@ -4,4 +4,3 @@ services:
     build: ./
     volumes:
       - .:/var/www/html
-    command: bash -c "composer test"
