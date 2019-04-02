@@ -44,7 +44,7 @@ class GenerateSchemaMetaCommand extends Command
         $exclude_classes = $this->option('excludeClass');
         $xml_file = $this->option('xmlFile');
 
-        $composer_json = json_decode(file_get_contents(base_path('composer.json')));
+        $composer_json = json_decode(file_get_contents(base_path('composer.json')), true);
         $autoload_psr4 = $composer_json['autoload']['psr-4'];
 
         $model_path = null;
