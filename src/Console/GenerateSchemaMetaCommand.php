@@ -76,7 +76,7 @@ class GenerateSchemaMetaCommand extends Command
         foreach ($files as $file) {
             $class = basename($file, '.php');
 
-            $ref = new \ReflectionClass("$namespace\\$class");
+            $ref = new \ReflectionClass("$model_namespace\\$class");
             if (!$this->isModelClass($ref)) {
                 continue;
             }
@@ -95,7 +95,7 @@ class GenerateSchemaMetaCommand extends Command
 
         $xml_path = base_path() . '/' . $xml_file;
 
-        $result = SchemaMeta::generate($target_files, $namespace, $xml_path);
+        $result = SchemaMeta::generate($target_files, $model_namespace, $xml_path);
 
         if ($result === false) {
             $this->error('Failed to write to xml.');
