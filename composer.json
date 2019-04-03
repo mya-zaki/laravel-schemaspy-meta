@@ -33,7 +33,7 @@
       "src/php-ast/util.php"
     ],
     "psr-4": {
-      "MyaZaki\\LaravelSchemaspyMeta\\Tests\\": "tests"
+      "MyaZaki\\LaravelSchemaspyMeta\\Tests\\": "tests/"
     }
   },
   "scripts": {
