@@ -15,7 +15,7 @@ php artisan schemaspy-meta:generate
 ### arguments
 
 `namespace`: `string` | App  
-The namespace of Eloquent Models. e.g. App\\Models, 'App\Models'
+The namespace of Eloquent Models. e.g. App\\\\Models, 'App\Models'
 
 ### options
 
