@@ -2,6 +2,7 @@
 namespace MyaZaki\LaravelSchemaspyMeta\Console;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Str;
 use MyaZaki\LaravelSchemaspyMeta\SchemaMeta;
 
 class GenerateSchemaMetaCommand extends Command
@@ -49,8 +50,8 @@ class GenerateSchemaMetaCommand extends Command
 
         $model_path = null;
         foreach ($autoload_psr4 as $ns => $path) {
-            if (starts_with($model_namespace, $ns)) {
-                $model_path = $path . str_replace('\\', '/', str_after($model_namespace, $ns));
+            if (Str::startsWith($model_namespace, $ns)) {
+                $model_path = $path . str_replace('\\', '/', Str::after($model_namespace, $ns));
                 break;
             }
         }
@@ -113,6 +114,10 @@ class GenerateSchemaMetaCommand extends Command
 
             if ($ref->getName() === \Illuminate\Database\Eloquent\Model::class) {
                 return true;
+            }
+
+            if ($ref->getName() === \BaoPham\DynamoDb\DynamoDbModel::class) {
+                return false;
             }
 
             return $parent($ref);
