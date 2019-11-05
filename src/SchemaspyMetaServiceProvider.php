@@ -1,4 +1,5 @@
 <?php
+
 namespace MyaZaki\LaravelSchemaspyMeta;
 
 use MyaZaki\LaravelSchemaspyMeta\Console\GenerateSchemaMetaCommand;
@@ -21,6 +22,9 @@ class SchemaspyMetaServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__ . '/config.php' => config_path('schemaspy_meta.php'),
+        ]);
     }
 
     /**

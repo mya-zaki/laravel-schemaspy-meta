@@ -1,6 +1,6 @@
 # laravel-schemaspy-meta
 
-## install
+## Installation
 
 ```
 composer require --dev mya-zaki/laravel-schemaspy-meta
@@ -29,3 +29,10 @@ The specified classes are ignored.
 e.g.
 --excludeClass Foo --excludeClass Bar
 ```
+
+## Configration
+
+Run the command `$ php artisan vendor:publish`  
+The file schemaspy_meta.php will then be copied to *app/config*.  
+
+Exclude subclasses that inherit the specified superclasses.  

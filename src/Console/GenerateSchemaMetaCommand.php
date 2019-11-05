@@ -1,4 +1,5 @@
 <?php
+
 namespace MyaZaki\LaravelSchemaspyMeta\Console;
 
 use Illuminate\Console\Command;
@@ -116,7 +117,7 @@ class GenerateSchemaMetaCommand extends Command
                 return true;
             }
 
-            if ($ref->getName() === \BaoPham\DynamoDb\DynamoDbModel::class) {
+            if (in_array($ref->getName(), config('schemaspy_meta.exclude_parent_models'))) {
                 return false;
             }
 
