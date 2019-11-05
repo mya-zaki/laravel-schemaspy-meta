@@ -32,7 +32,11 @@ e.g.
 
 ## Configration
 
-Run the command `$ php artisan vendor:publish`  
+Run the command
+```
+php artisan vendor:publish
+```
+
 The file schemaspy_meta.php will then be copied to *app/config*.  
 
 Exclude subclasses that inherit the specified superclasses.  
