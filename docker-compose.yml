@@ -3,4 +3,4 @@ services:
   php-ast:
     build: ./
     volumes:
-      - .:/var/www/html
+      - .:/workspace

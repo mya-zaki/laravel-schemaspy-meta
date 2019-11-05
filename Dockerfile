@@ -18,6 +18,6 @@ RUN php -r "copy('https://raw.githubusercontent.com/composer/getcomposer.org/mas
     && php -r "unlink('composer-setup.php');" \
     && mv composer.phar /usr/local/bin/composer
 
-ENV PATH /var/www/html/vendor/bin:$PATH
+ENV PATH /workspace/vendor/bin:$PATH
 
-WORKDIR /var/www/html
+WORKDIR /workspace
