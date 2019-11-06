@@ -33,10 +33,13 @@ e.g.
 ## Configration
 
 Run the command
+
 ```
 php artisan vendor:publish
 ```
 
-The file schemaspy_meta.php will then be copied to *app/config*.  
+Select Provider: `Provider: MyaZaki\LaravelSchemaspyMeta\SchemaspyMetaServiceProvider`
 
-Exclude subclasses that inherit the specified superclasses.  
+The file schemaspy_meta.php will then be copied to _app/config_.
+
+Exclude subclasses that inherit the specified superclasses.
