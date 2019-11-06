@@ -10,5 +10,7 @@ return [
     |   \Jenssegers\Mongodb\Eloquent\Model::class,
     |   \BaoPham\DynamoDb\DynamoDbModel::class,
     */
-    'exclude_parent_models' => []
+    'exclude_parent_models' => [
+        //
+    ]
 ];

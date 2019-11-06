@@ -117,7 +117,7 @@ class GenerateSchemaMetaCommand extends Command
                 return true;
             }
 
-            if (in_array($ref->getName(), config('schemaspy_meta.exclude_parent_models'))) {
+            if (in_array($ref->getName(), config('schemaspy_meta.exclude_parent_models', []))) {
                 return false;
             }
 
