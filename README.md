@@ -48,3 +48,7 @@ Select Provider: `Provider: MyaZaki\LaravelSchemaspyMeta\SchemaspyMetaServicePro
 The file schemaspy*meta.php will then be copied to \_app/config*.
 
 Exclude subclasses that inherit the specified superclasses.
+
+## References
+- https://github.com/mya-zaki/laravel-schemaspy-sample
+- https://qiita.com/mya-zaki@github/items/e4f0514b320460ae64c5
