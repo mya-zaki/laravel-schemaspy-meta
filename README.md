@@ -1,5 +1,10 @@
 # laravel-schemaspy-meta
 
+## Requires
+
+install php_ast  
+https://github.com/nikic/php-ast#installation
+
 ## Installation
 
 ```
@@ -40,6 +45,6 @@ php artisan vendor:publish
 
 Select Provider: `Provider: MyaZaki\LaravelSchemaspyMeta\SchemaspyMetaServiceProvider`
 
-The file schemaspy_meta.php will then be copied to _app/config_.
+The file schemaspy*meta.php will then be copied to \_app/config*.
 
 Exclude subclasses that inherit the specified superclasses.
