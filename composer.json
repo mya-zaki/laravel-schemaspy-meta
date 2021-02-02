@@ -16,9 +16,9 @@
   ],
   "require": {
     "php": "^7.2",
-    "illuminate/console": "^6.0",
-    "illuminate/database": "^6.0",
-    "illuminate/support": "^6.0"
+    "illuminate/console": "^6.20",
+    "illuminate/database": "^6.20",
+    "illuminate/support": "^6.20"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.4",
